@@ -1,4 +1,6 @@
 import './app.css';
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button';
 
 const app = () => {
     const handleClick = () => {
@@ -15,11 +17,11 @@ const app = () => {
 
     return (
         <div className="app">
-            <input type="text" id="input-login"/>
-            <input type="text" id="input-password"/>
-            <button onClick={handleClick}>
+            <TextField id="input-login" variant="outlined" placeholder="Login"/>
+            <TextField id="input-password" variant="outlined" placeholder="Password"/>
+            <Button id="button-say-in-json" variant="contained" onClick={handleClick}>
                 Say in JSON
-            </button>
+            </Button>
         </div>
     );
 }
